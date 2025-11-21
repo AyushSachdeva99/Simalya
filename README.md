@@ -1,185 +1,103 @@
-# KeshQueen - Handcrafted Hair Oil Website
+# Simalya - Natural Hair Oil
 
-Welcome to the KeshQueen website! This is a professional, responsive website designed to showcase and sell handmade hair oils.
+**Himalayan Purity, Natural Beauty**
 
-## 🌿 Features
+A modern, elegant website for Simalya - handcrafted natural hair oils made with traditional recipes and 100% natural ingredients.
 
-- **Beautiful Hero Section** - Eye-catching landing page with call-to-action
-- **Product Showcase** - Display multiple hair oil products with descriptions and pricing
-- **About Section** - Tell your brand story and highlight what makes your products special
-- **Benefits Section** - Showcase why customers should choose your products
-- **Testimonials** - Build trust with customer reviews
-- **Contact Form** - Easy way for customers to get in touch and place orders
-- **Responsive Design** - Works perfectly on mobile, tablet, and desktop
-- **Smooth Animations** - Professional scroll effects and hover interactions
+## 🌟 Features
 
-## 📁 File Structure
+- **Modern Design**: Clean, sophisticated UI with Himalayan-inspired blue and gold color scheme
+- **Responsive**: Fully responsive design that works on all devices
+- **Premium Branding**: Professional logo and consistent design language
+- **Interactive**: Smooth animations and hover effects
+- **SEO Optimized**: Proper meta tags and semantic HTML
 
-```
-keshQueen/
-├── index.html          # Main HTML file
-├── styles.css          # All styling and design
-├── script.js           # Interactive functionality
-├── images/             # Folder for product images
-└── README.md           # This file
-```
+## 🎨 Brand Identity
 
-## 🎨 Customization Guide
+- **Primary Color**: Deep Blue (#1e3a5f)
+- **Secondary Color**: Medium Blue (#2c5f8d)
+- **Accent Color**: Premium Gold (#d4af37)
+- **Philosophy**: Evoking the purity of the Himalayas combined with natural beauty
 
-### 1. Add Your Product Images
+## 🚀 Getting Started
 
-Place your product images in the `images/` folder. Then update the HTML:
+### Prerequisites
 
-```html
-<!-- Replace the hero-placeholder with: -->
-<div class="hero-image">
-    <img src="images/your-product-hero.jpg" alt="KeshQueen Hair Oil">
-</div>
+- Node.js 18+ 
+- npm or yarn
 
-<!-- Replace product icons with: -->
-<div class="product-image">
-    <img src="images/coconut-oil.jpg" alt="Coconut Blend">
-</div>
-```
+### Installation
 
-### 2. Update Contact Information
-
-Edit these sections in `index.html`:
-
-```html
-<!-- Line ~340 - Update email -->
-<p>keshmantra@example.com</p>
-
-<!-- Line ~348 - Update phone -->
-<p>+91 XXXXX XXXXX</p>
-
-<!-- Line ~356 - Update location -->
-<p>Your City, India</p>
-```
-
-### 3. Customize Products
-
-Edit the product cards in `index.html` (around line 147-239):
-- Change product names
-- Update descriptions
-- Modify prices
-- Add or remove products
-
-### 4. Modify Colors
-
-Update the color scheme in `styles.css` (lines 9-15):
-
-```css
-:root {
-    --primary-color: #2d5016;      /* Main green */
-    --secondary-color: #6b8e23;    /* Secondary green */
-    --accent-color: #d4a574;       /* Gold accent */
-    /* ... */
-}
-```
-
-### 5. Update Testimonials
-
-Edit testimonial content in `index.html` (around line 277-307):
-- Change customer names
-- Update reviews
-- Add more testimonial cards
-
-## 🚀 How to Use
-
-### Option 1: Open Directly
-Simply double-click `index.html` to open it in your browser.
-
-### Option 2: Use a Local Server
-For better testing:
-
+1. Clone the repository:
 ```bash
-# If you have Python installed:
-python -m http.server 8000
-
-# If you have Node.js installed:
-npx http-server
-
-# Then open: http://localhost:8000
+git clone https://github.com/AyushSachdeva99/Simalya.git
+cd Simalya/keshmantra-nextjs
 ```
 
-## 📱 Social Media Integration
-
-To add working social media links, update the footer in `index.html` (around line 407):
-
-```html
-<a href="https://facebook.com/yourpage" class="social-icon">FB</a>
-<a href="https://instagram.com/yourpage" class="social-icon">IG</a>
-<a href="https://wa.me/91XXXXXXXXXX" class="social-icon">WA</a>
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn install
 ```
 
-## 📧 Setting Up Contact Form
-
-The form currently shows an alert message. To actually receive messages:
-
-### Option 1: Use Formspree (Easy, Free)
-1. Sign up at https://formspree.io
-2. Get your form endpoint
-3. Update the form in `index.html`:
-
-```html
-<form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+3. Run the development server:
+```bash
+npm run dev
+# or
+yarn dev
 ```
 
-### Option 2: Use Google Forms
-1. Create a Google Form
-2. Link to it from your contact button
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-### Option 3: Backend Integration
-Create a backend API and update `script.js` to send form data to your server.
+## 📁 Project Structure
 
-## 🎯 Next Steps
+```
+keshmantra-nextjs/
+├── app/
+│   ├── components/     # React components
+│   │   ├── Navbar.tsx
+│   │   ├── Hero.tsx
+│   │   ├── About.tsx
+│   │   ├── Products.tsx
+│   │   ├── Benefits.tsx
+│   │   ├── Testimonials.tsx
+│   │   ├── Contact.tsx
+│   │   └── Footer.tsx
+│   ├── layout.tsx      # Root layout
+│   ├── page.tsx        # Home page
+│   ├── globals.css     # Global styles
+│   └── styles.css      # Component styles
+├── public/             # Static assets
+└── package.json
+```
 
-1. **Add Real Images** - Replace emoji placeholders with actual product photos
-2. **Update Contact Info** - Add your real email, phone, and address
-3. **Customize Content** - Personalize all text to match your brand
-4. **Test on Mobile** - Open on your phone to ensure it looks good
-5. **Deploy Online** - Host on GitHub Pages, Netlify, or Vercel (free options)
+## 🛠️ Built With
 
-## 🌐 Deploying Your Website
+- **Next.js 16** - React framework
+- **TypeScript** - Type safety
+- **Tailwind CSS** - Utility-first CSS
+- **React** - UI library
 
-### GitHub Pages (Free)
-1. Create a GitHub account
-2. Create a new repository named "keshqueen"
-3. Upload these files
-4. Go to Settings > Pages
-5. Select main branch and save
-6. Your site will be live at: `https://yourusername.github.io/keshqueen`
+## 📝 Recent Updates
 
-### Netlify (Free)
-1. Go to netlify.com
-2. Drag and drop this folder
-3. Get instant deployment!
+### Rebranding (November 2025)
+- ✨ Rebranded from "KeshQueen" to "Simalya"
+- 🎨 New Himalayan-inspired logo design
+- 🎨 Updated color palette (blue and gold theme)
+- ✨ Enhanced UI with better animations and effects
+- 📱 Improved mobile responsiveness
 
-## 💡 Tips for Success
+See [REBRANDING.md](keshmantra-nextjs/REBRANDING.md) for detailed changelog.
 
-- **High-Quality Images**: Use clear, well-lit photos of your products
-- **Authentic Story**: Share the real story behind your mother's recipes
-- **Customer Reviews**: Add genuine testimonials as you get customers
-- **SEO**: Update meta tags in HTML for better Google search results
-- **Pricing**: Keep prices competitive and clearly displayed
-- **WhatsApp Integration**: Add a WhatsApp button for instant customer contact
+## 📧 Contact
 
-## 🔧 Browser Support
+For inquiries: simalya@example.com
 
-Works on all modern browsers:
-- Chrome, Firefox, Safari, Edge
-- Mobile browsers (iOS Safari, Chrome Mobile)
+## 📄 License
 
-## 📞 Need Help?
-
-If you need to make changes and aren't sure how, feel free to ask! Common requests:
-- Adding more product pages
-- Setting up payment integration
-- Adding image galleries
-- Creating a blog section
-- Mobile menu improvements
+All rights reserved © 2025 Simalya
 
 ---
 
-Made with ❤️ for KeshQueen - Bringing natural hair care to everyone!
+Made with ❤️ for beautiful hair
